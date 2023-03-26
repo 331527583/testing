@@ -1,0 +1,7 @@
+#include_directories(${PROJECT_SOURCE_DIR})
+project(map_test_main CXX)
+cmake_minimum_required(VERSION 3.10)
+message(STATUS "2WORKSPACE IS ${WORKSPACE}")
+message(STATUS "3project_source_dir is ${PROJECT_SOURCE_DIR}")
+add_executable(map_test_main map_test_main.cpp)
+target_include_directories(map_test_main PUBLIC ${WORKSPACE})
