@@ -33,6 +33,19 @@ namespace sub1 {
 }  // namespace sub1
 
 int main() {
+    /*//
+    const int constant = 26;
+    const int * constant_p = &constant;
+    int * modifier = const_cast<int *>(constant_p);
+    *modifier = 3;
+    cout << "constant:" <<  constant << endl;
+    cout << "constant_p:" << *constant_p  << endl;
+    cout << "modifier :" << *modifier << endl;//
+    //*/
+
+    //char c = 'a';
+    ///int * p = static_cast<int*>(&c);//error static_cast会做类型检查
+
     std::cout << "Hello, World!" << std::endl;
     base::Base * base = base::BaseRegister::GetInstanceByName("Sub1");
     if(base ==NULL){
